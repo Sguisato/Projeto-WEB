@@ -1,6 +1,6 @@
 <?php
 //define('PASTAPROJETO', 'AulaBanco');
-define('PASTAPROJETO', 'PhpBackend-master');
+define('PASTAPROJETO', 'PhpBackEnd');
 
 /* Função criada para retornar o tipo de requisição */
 function checkRequest() {
@@ -24,10 +24,10 @@ function checkRequest() {
 	}
 	return $answer;
 }
+$answer = checkRequest();
 
 $request = $_SERVER['REQUEST_URI']; // IDENTIFICA A URI DA REQUISIÇÃO
 
-$answer = checkRequest();
 
 switch ($request) {
     case '/'.PASTAPROJETO.'/' :
